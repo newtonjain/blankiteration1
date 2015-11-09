@@ -1,18 +1,16 @@
 body {
-
-  background: -webkit-linear-gradient(90deg, #eea849 10%, #F4CA91 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #eea849 10%, #F4CA91 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #eea849 10%, #F4CA91 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #eea849 10%, #F4CA91 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #eea849 10%, #F4CA91 90%); /* W3C */        
-        
+  background: -webkit-linear-gradient(90deg, #83a4d4 10%, #b6fbff 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #83a4d4 10%, #b6fbff 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #83a4d4 10%, #b6fbff 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #83a4d4 10%, #b6fbff 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #83a4d4 10%, #b6fbff 90%); /* W3C */                
 }
 
 .app {
     background:url(../images/logo.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
+    left:43.5%;
+    top:30%;
     height:50px;                   /* text area height */
     width:225px;                   /* text area width */
     text-align:center;
@@ -21,33 +19,40 @@ body {
  	animation:sube 3s alternate infinite;
 	-moz-animation:sube 3s alternate infinite;
  	-webkit-animation:sube 3s alternate infinite;							 /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
 }
 
 
-.so{
+.shadow{
   position:absolute;
-  width:200px;
+  width:150px;
   height:30px;
   border-radius:100%;
-  background:gray;
-  margin:430px 202px;
+  background:#222;
+   opacity: 0.2;
+  text-align:center;
+  left:45.6%;
+  top:65%;
   animation:re 3s alternate infinite;
   -moz-animation:re 3s alternate infinite;
    -webkit-animation:re 3s alternate infinite;
+   -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
 
 @keyframes sube{
-  0%{margin:21px 0px;}
-  100%{margin:-21px 0px;}
+  0%{margin:31px 0px;}
+  100%{margin:-31px 0px;}
 }
 @-moz-keyframes sube{
-  0%{margin:21px 0px;}
-  100%{margin:-21px 0px;}
+  0%{margin:31px 0px;}
+  100%{margin:-31px 0px;}
 }
 @-webkit-keyframes sube{
-  0%{margin:21px 0px;}
-  100%{margin:-21px 0px;}
+  0%{margin:31px 0px;}
+  100%{margin:-31px 0px;}
 }
 
 @keyframes re{
@@ -94,11 +99,13 @@ h1 {
 }
 
 .event.listening {
+  text-align:center;
     background-color:#333333;
     display:block;
 }
 
 .event.received {
+  text-align:center;
     background-color:#4B946A;
     display:none;
 }
@@ -117,7 +124,8 @@ h1 {
  
 .blink {
 	width:225px;  
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
+  margin-top: 10px;
+  animation:fade 3000ms infinite;
+  -webkit-animation:fade 3000ms infinite;
 }
 

@@ -7,7 +7,7 @@
         Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
         For details, see http://go.microsoft.com/fwlink/?LinkID=617521
     -->
-<!--     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     <title>HelloTaco</title>
 
     <!-- My app references -->
@@ -15,16 +15,17 @@
 </head>
 <body>
 
-    <div class="app">
-    </div>
-
-  <div class="so"></div>
-
 <h1>Tools For Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+   <center>  
+   <div id="deviceready" class="blink">
+        <p class="event listening">DEVICE NOT CONNECTED</p>
+        <p class="event received">DEVICE IS READY</p>
+    </div>
+   </center>
+
+   <div class="app"></div>
+    <div class="shadow"></div>
+ 
     <!-- Cordova reference, this is added to your app when it's built. -->
     <script src="cordova.js"></script>
     <script src="scripts/platformOverrides.js"></script>
