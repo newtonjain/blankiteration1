@@ -8,11 +8,14 @@ body {
 
 .app {
     background:url(../images/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:43.5%;
-    top:30%;
+   position:absolute;
+left:0;
+right:0;
+margin-left:auto;
+margin-right:auto;
+    top:35%;
     height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
+    /*width:225px;          */         /* text area width */
     text-align:center;
     padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
   	margin:21px 0;
@@ -22,16 +25,20 @@ body {
 }
 
 
+
 .shadow{
-  position:absolute;
+position:absolute;
+left:0;
+right:0;
+margin-left:auto;
+margin-right:auto;
   width:150px;
   height:30px;
   border-radius:100%;
   background:#222;
    opacity: 0.2;
   text-align:center;
-  left:45.6%;
-  top:65%;
+  top:70%;
   animation:re 3s alternate infinite;
   -moz-animation:re 3s alternate infinite;
    -webkit-animation:re 3s alternate infinite;
